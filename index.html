@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Irene &amp; Shams | #IS</title>
+<meta name="description" content="You are invited to celebrate our union in marriage.">
+<link rel="canonical" href="https://gocportfolio.github.io/I-S2026/">
+<meta name="theme-color" content="#2f1a47">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Irene &amp; Shams">
+<meta property="og:title" content="Irene &amp; Shams | #IS">
+<meta property="og:description" content="You are invited to celebrate our union in marriage.">
+<meta property="og:url" content="https://gocportfolio.github.io/I-S2026/">
+<meta property="og:image" content="https://gocportfolio.github.io/I-S2026/assets/og-image-2.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A sealed envelope marked I &amp; S with the words You Are Invited">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Irene &amp; Shams | #IS">
+<meta name="twitter:description" content="You are invited to celebrate our union in marriage.">
+<meta name="twitter:image" content="https://gocportfolio.github.io/I-S2026/assets/og-image-2.jpg">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="image" href="assets/hero.webp" type="image/webp">
+<link rel="preload" as="image" href="assets/envelope-card.webp" type="image/webp">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap"></noscript>
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.className='js';</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ ENVELOPE INTRO ============ -->
+<div id="intro" class="intro" role="dialog" aria-label="Wedding invitation. Tap the seal to open.">
+  <div class="intro-glow" aria-hidden="true"></div>
+  <div class="env-stage" id="envStage">
+    <p class="env-greet" id="envGreet" hidden></p>
+    <div class="env" id="env">
+      <div class="env-back" aria-hidden="true"></div>
+      <div class="env-card" id="envCard" aria-hidden="true">
+        <img src="assets/envelope-card.webp" width="760" height="887" alt="" decoding="async">
+      </div>
+      <svg class="env-front" viewBox="0 0 700 476" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="gL" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3a2058"/><stop offset="1" stop-color="#4c2c6f"/></linearGradient>
+          <linearGradient id="gR" x1="1" y1="0" x2="0" y2="0"><stop offset="0" stop-color="#341d4e"/><stop offset="1" stop-color="#462768"/></linearGradient>
+          <linearGradient id="gB" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#2a1740"/><stop offset="1" stop-color="#3f2460"/></linearGradient>
+        </defs>
+        <polygon points="0,0 350,262 0,476" fill="url(#gL)"/>
+        <polygon points="700,0 350,262 700,476" fill="url(#gR)"/>
+        <polygon points="0,476 350,262 700,476" fill="url(#gB)"/>
+        <g fill="none" stroke="#d9b866" stroke-opacity=".55" stroke-width="1.2" vector-effect="non-scaling-stroke">
+          <polyline points="0,0 350,262 700,0" vector-effect="non-scaling-stroke"/>
+          <polyline points="0,476 350,262 700,476" vector-effect="non-scaling-stroke"/>
+        </g>
+      </svg>
+      <div class="env-flap" id="flap" aria-hidden="true">
+        <div class="flap-face flap-out"></div>
+        <div class="flap-face flap-in"></div>
+      </div>
+      <button class="seal" id="seal" type="button" aria-label="Open the invitation">
+        <span class="seal-half seal-l"><span class="seal-face"><b data-cfg="couple.sealLetters"></b></span></span>
+        <span class="seal-half seal-r"><span class="seal-face"><b data-cfg="couple.sealLetters"></b></span></span>
+      </button>
+    </div>
+    <p class="env-title gold-text">YOU ARE INVITED</p>
+    <p class="env-hint">Tap the seal to open</p>
+  </div>
+  <button class="skip-btn" id="skip" type="button">Skip</button>
+</div>
+
+<button class="sound-btn" id="sound" type="button" aria-pressed="false" aria-label="Turn music on">
+  <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor"/><g class="s-on" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M16 9a4 4 0 0 1 0 6"/><path d="M18.5 6.5a8 8 0 0 1 0 11"/></g><path class="s-off" d="M16 9l6 6m0-6l-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+</button>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<div id="page">
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <div class="hero-photo">
+    <img src="assets/hero.webp" width="860" height="1075" alt="Irene and Shams seated close together on a cream sofa" fetchpriority="high" decoding="async">
+  </div>
+  <div class="hero-body">
+    <p class="eyebrow" data-cfg="couple.hashtag"></p>
+    <p class="hero-tag" data-cfg="couple.tagline"></p>
+    <h1 class="hero-names">
+      <span class="script gold-text gold-text--dark" data-cfg="couple.heroBride"></span>
+      <span class="hero-amp" aria-hidden="true">&amp;</span>
+      <span class="script gold-text gold-text--dark" data-cfg="couple.heroGroom"></span>
+    </h1>
+    <p class="hero-date"><span data-cfg="date.long"></span></p>
+    <p class="hero-city" data-cfg="venue.city"></p>
+    <a class="scroll-cue" href="#invitation" aria-label="Scroll to the invitation"><span></span></a>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+<!-- ============ INVITATION CARD ============ -->
+<section class="sec sec-card" id="invitation" aria-labelledby="inv-h">
+  <div class="wrap">
+    <article class="card reveal">
+      <img class="corner c-tl" src="assets/fl-tl.webp" width="314" height="343" alt="" loading="lazy">
+      <img class="corner c-br" src="assets/fl-br.webp" width="231" height="302" alt="" loading="lazy">
+      <img class="corner c-bl" src="assets/fl-bl.webp" width="172" height="193" alt="" loading="lazy">
+      <div class="card-in">
+        <p class="card-guest" id="cardGuest" hidden></p>
+        <svg class="logo" viewBox="0 0 120 120" aria-hidden="true">
+          <g fill="none" stroke="#b8893f" stroke-width="1.6" stroke-linecap="round">
+            <path d="M60 104C30 98 14 76 16 48"/><path d="M60 104c30-6 46-28 44-56"/>
+            <g fill="#b8893f" stroke="none">
+              <ellipse cx="20" cy="76" rx="4" ry="8" transform="rotate(-30 20 76)"/><ellipse cx="14" cy="60" rx="4" ry="8" transform="rotate(-12 14 60)"/><ellipse cx="17" cy="44" rx="4" ry="8" transform="rotate(8 17 44)"/><ellipse cx="30" cy="90" rx="4" ry="8" transform="rotate(-50 30 90)"/>
+              <ellipse cx="100" cy="76" rx="4" ry="8" transform="rotate(30 100 76)"/><ellipse cx="106" cy="60" rx="4" ry="8" transform="rotate(12 106 60)"/><ellipse cx="103" cy="44" rx="4" ry="8" transform="rotate(-8 103 44)"/><ellipse cx="90" cy="90" rx="4" ry="8" transform="rotate(50 90 90)"/>
+            </g>
+            <circle cx="50" cy="56" r="14" stroke-width="3"/><circle cx="70" cy="56" r="14" stroke-width="3"/>
+            <path d="M60 30l4 6h-8z" fill="#7a4a9e" stroke="none"/>
+          </g>
+        </svg>
+        <p class="hashtag" data-cfg="couple.hashtag"></p>
+        <p class="families-top">The Families Of</p>
+        <p class="family-name" data-cfg="bride.fatherLine"></p>
+        <p class="and-small">And</p>
+        <p class="family-name" data-cfg="groom.fatherLine"></p>
+        <p class="label purple">Cordially invite you to the</p>
+        <h2 id="inv-h" class="wedding-word script">Wedding</h2>
+        <p class="solem"><img src="assets/swash.svg" width="60" height="7" alt="" loading="lazy"> <span class="script gold-text gold-text--dark" data-cfg="card.event"></span> <img class="flip-x" src="assets/swash.svg" width="60" height="7" alt="" loading="lazy"></p>
+        <p class="rule-label"><span>Of their beloved children</span></p>
+
+        <div class="person">
+          <p class="p-title" data-cfg="bride.title"></p>
+          <p class="p-given" data-cfg="bride.given"></p>
+          <p class="p-sur script" data-cfg="bride.surname"></p>
+          <p class="p-par" data-cfg="bride.parents"></p>
+        </div>
+        <p class="amp-div" aria-hidden="true"><i></i><b class="gold-text gold-text--dark">&amp;</b><i></i></p>
+        <div class="person">
+          <p class="p-title" data-cfg="groom.title"></p>
+          <p class="p-given" data-cfg="groom.given"></p>
+          <p class="p-sur script" data-cfg="groom.surname"></p>
+          <p class="p-par" data-cfg="groom.parents"></p>
+        </div>
+
+        <p class="label purple sched">Which is scheduled to take place as follows</p>
+        <dl class="when">
+          <div><dt>Date</dt><dd data-cfg="date.long"></dd></div>
+          <div><dt>Venue</dt><dd data-cfg="venue.ceremony.name"></dd></div>
+          <div><dt>Time</dt><dd data-cfg="date.time"></dd></div>
+        </dl>
+        <p class="ribbon"><span data-cfg="card.receptionNote"></span></p>
+        <p class="recep" data-cfg="venue.reception.name"></p>
+
+        <p class="label purple colours-h">Colours of the day</p>
+        <ul class="swatches" id="cardSwatches"></ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ COUNTDOWN ============ -->
+<section class="sec sec-count" aria-labelledby="cd-h">
+  <div class="wrap center">
+    <p class="kicker">Save the date</p>
+    <h2 id="cd-h" class="sec-title">Counting down to <span class="script gold-text">our day</span></h2>
+    <div class="countdown reveal" id="countdown" role="timer" aria-live="off">
+      <div class="cd"><span class="cd-num" data-u="d">00</span><span class="cd-lab">Days</span></div>
+      <div class="cd"><span class="cd-num" data-u="h">00</span><span class="cd-lab">Hours</span></div>
+      <div class="cd"><span class="cd-num" data-u="m">00</span><span class="cd-lab">Minutes</span></div>
+      <div class="cd"><span class="cd-num" data-u="s">00</span><span class="cd-lab">Seconds</span></div>
+    </div>
+    <p class="married" id="married" hidden>We are married!</p>
+    <p class="cd-sub"><span data-cfg="date.long"></span> · <span data-cfg="date.time"></span> <span data-cfg="date.tzLabel"></span></p>
+    <div class="btn-row">
+      <a class="btn btn-ghost" id="gcal" target="_blank" rel="noopener">Add to Google Calendar</a>
+      <button class="btn btn-ghost" id="ics" type="button">Apple / Outlook (.ics)</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VENUES ============ -->
+<section class="sec sec-venues" id="venues" aria-labelledby="ven-h">
+  <div class="wrap center">
+    <p class="kicker">Where</p>
+    <h2 id="ven-h" class="sec-title">The <span class="script gold-text gold-text--dark">venues</span></h2>
+    <div class="venue-grid" id="venueGrid"></div>
+  </div>
+</section>
+
+<!-- ============ FATHER OF THE DAY ============ -->
+<section class="sec sec-father" id="father" aria-labelledby="fa-h" hidden>
+  <div class="wrap center reveal">
+    <h2 id="fa-h" class="script gold-text">Father of the Day</h2>
+    <p class="fa-name" data-cfg="father.name"></p>
+    <p class="fa-role" id="faRole"></p>
+  </div>
+</section>
+
+<!-- ============ STORY ============ -->
+<section class="sec sec-story" id="story" aria-labelledby="st-h">
+  <div class="wrap center">
+    <p class="kicker">Our story</p>
+    <h2 id="st-h" class="sec-title" data-cfg="story.intro"></h2>
+    <p class="lead" data-cfg="story.lead"></p>
+    <ol class="timeline" id="timeline"></ol>
+    <p class="story-close reveal" data-cfg="story.closing"></p>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="sec sec-gallery" id="gallery" aria-labelledby="ga-h">
+  <div class="wrap center">
+    <p class="kicker">Gallery</p>
+    <h2 id="ga-h" class="sec-title">Moments of <span class="script gold-text gold-text--dark">us</span></h2>
+    <div class="masonry" id="masonry"></div>
+  </div>
+</section>
+
+<!-- ============ TOAST ============ -->
+<section class="sec sec-toast" id="toastSec" aria-labelledby="to-h">
+  <div class="wrap center reveal">
+    <h2 id="to-h" class="script gold-text">A Wedding Toast</h2>
+    <div class="toast-lines" id="toastLines"></div>
+  </div>
+</section>
+
+<!-- ============ RSVP ============ -->
+<section class="sec sec-rsvp" id="rsvp" aria-labelledby="rs-h">
+  <img class="corner c-tr" src="assets/fl-tl.webp" width="314" height="343" alt="" loading="lazy">
+  <div class="wrap center">
+    <p class="kicker">Kindly reply</p>
+    <h2 id="rs-h" class="sec-title">R.S.V.P.</h2>
+    <form id="rsvpForm" class="form reveal" novalidate>
+      <div class="field">
+        <label for="f-name">Your name</label>
+        <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="e-name">
+        <p class="err" id="e-name" role="alert"></p>
+      </div>
+      <div class="field">
+        <label for="f-phone">Phone number</label>
+        <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required aria-describedby="e-phone">
+        <p class="err" id="e-phone" role="alert"></p>
+      </div>
+      <fieldset class="field" aria-describedby="e-att">
+        <legend>Will you be there?</legend>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="attending" value="yes"><span>Joyfully accept</span></label>
+          <label class="choice"><input type="radio" name="attending" value="no"><span>Regretfully decline</span></label>
+        </div>
+        <p class="err" id="e-att" role="alert"></p>
+      </fieldset>
+      <div class="field" id="guestsField">
+        <label for="f-guests">Number of guests (including you)</label>
+        <select id="f-guests" name="guests" aria-describedby="e-guests"></select>
+        <p class="err" id="e-guests" role="alert"></p>
+      </div>
+      <div class="field">
+        <label for="f-msg">A message for the couple <span class="opt">(optional)</span></label>
+        <textarea id="f-msg" name="message" rows="3"></textarea>
+      </div>
+      <div class="hp" aria-hidden="true"><label>Leave this empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+      <button class="btn btn-solid" id="rsvpBtn" type="submit">Send my RSVP</button>
+      <div class="rsvp-result" id="rsvpResult" role="status" aria-live="polite" hidden></div>
+    </form>
+    <div class="btn-row reveal">
+      <a class="btn btn-wa" id="waRsvp" target="_blank" rel="noopener">RSVP on WhatsApp</a>
+      <a class="btn btn-ghost" id="callRsvp">Call to RSVP</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GIFTS ============ -->
+<section class="sec sec-gifts" id="gifts" aria-labelledby="gi-h">
+  <img class="corner c-gl" src="assets/fl-bl.webp" width="172" height="193" alt="" loading="lazy">
+  <div class="wrap center">
+    <p class="kicker">With gratitude</p>
+    <h2 id="gi-h" class="sec-title">Gifts</h2>
+    <p class="lead" data-cfg="gifts.message"></p>
+    <div class="bank reveal">
+      <p class="bank-name" data-cfg="gifts.bank"></p>
+      <p class="bank-num" id="acctNum" data-cfg="gifts.accountNumber"></p>
+      <p class="bank-acct" data-cfg="gifts.accountName"></p>
+      <button class="btn btn-solid" id="copyAcct" type="button">Copy account number</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="sec sec-faq" id="faq" aria-labelledby="fq-h">
+  <div class="wrap center">
+    <p class="kicker">Good to know</p>
+    <h2 id="fq-h" class="sec-title">Questions</h2>
+    <div class="faq" id="faqList"></div>
+  </div>
+</section>
+
+<!-- ============ VENDORS (hidden when list is empty) ============ -->
+<section class="sec sec-vendors" id="vendors" aria-labelledby="vn-h" hidden>
+  <div class="wrap center">
+    <p class="kicker">With thanks to</p>
+    <h2 id="vn-h" class="sec-title">Our vendors</h2>
+    <ul class="vendor-list" id="vendorList"></ul>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap center">
+    <svg class="logo badge" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="56" fill="none" stroke="#d9b866" stroke-width="1.4"/><circle cx="60" cy="60" r="50" fill="none" stroke="#d9b866" stroke-opacity=".5"/><circle cx="50" cy="60" r="14" fill="none" stroke="#d9b866" stroke-width="3"/><circle cx="70" cy="60" r="14" fill="none" stroke="#d9b866" stroke-width="3"/></svg>
+    <p class="hashtag gold-text" data-cfg="couple.hashtag"></p>
+    <p class="foot-tag" data-cfg="couple.tagline"></p>
+    <div class="arch"><img id="footPhoto" alt="" width="520" height="780" loading="lazy"></div>
+    <p class="thanks" data-cfg="footer.thanks"></p>
+    <button class="btn btn-wa" id="shareWa" type="button">Share on WhatsApp</button>
+    <p class="foot-names script gold-text" data-cfg="couple.short"></p>
+  </div>
+</footer>
+</div>
+
+<!-- ============ LIGHTBOX ============ -->
+<div id="lb" class="lb" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+  <button class="lb-close" type="button" aria-label="Close photo viewer">&times;</button>
+  <button class="lb-nav lb-prev" type="button" aria-label="Previous photo">&#8249;</button>
+  <figure class="lb-fig"><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+  <button class="lb-nav lb-next" type="button" aria-label="Next photo">&#8250;</button>
+  <p class="lb-count" id="lbCount" aria-live="polite"></p>
+</div>
+
+<noscript>
+  <div class="noscript">
+    <h1>Irene &amp; Shams</h1>
+    <p>You are invited to celebrate our union in marriage.</p>
+    <p>Wednesday, 30th December 2026 · Gwantu, Sanga LGA</p>
+    <p>To RSVP, please call <a href="tel:07035140180">07035140180</a>.</p>
+  </div>
+</noscript>
+
+<script src="script.js"></script>
+</body>
+</html>
