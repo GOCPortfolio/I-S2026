@@ -117,7 +117,7 @@ const CONFIG = {
 
   gifts: {
     message: 'Your presence is the greatest gift. Should you wish to bless us further, a gift towards our new beginning will be received with joy and gratitude.',
-    bank: 'UBA',
+    bank: 'ACCESS BANK',
     accountName: 'ISAH HABU SHAMAKI',
     accountNumber: '0072284947'
   },
