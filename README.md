@@ -17,7 +17,7 @@ Plain HTML, CSS and JavaScript. No build step. Live address (after publishing): 
 5. Story, toast and gift message are drafts written for you. Edit freely.
 
 ## Photos
-Gallery photos are `assets/g1.webp` ... `g8.webp` with small `-sm` versions for thumbnails. To swap one, replace both files (full ~1000px wide, small ~520px) and update `w`/`h` in CONFIG.gallery. `hero.webp` is the top photo, `envelope-card.webp` slides out of the envelope.
+Gallery photos are `assets/g1.webp` ... `g9.webp` with small `-sm` versions for thumbnails. To swap one, replace both files (full ~1000px wide, small ~520px) and update `w`/`h` in CONFIG.gallery. `hero.webp` is the top photo, `envelope-card.webp` slides out of the envelope.
 
 ## RSVP into Google Sheets
 1. Create a Google Sheet. Extensions > Apps Script. Paste `google-apps-script.gs`.

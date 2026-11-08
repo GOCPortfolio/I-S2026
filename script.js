@@ -97,7 +97,8 @@ const CONFIG = {
     { src: 'assets/g5.webp', thumb: 'assets/g5-sm.webp', w: 560, h: 700, alt: 'Irene and Shams in champagne tones against an arched wall' },
     { src: 'assets/g6.webp', thumb: 'assets/g6-sm.webp', w: 560, h: 700, alt: 'Irene and Shams on a candlelit rooftop at night' },
     { src: 'assets/g7.webp', thumb: 'assets/g7-sm.webp', w: 520, h: 650, alt: 'Irene and Shams holding hands on stone steps in burgundy and gold' },
-    { src: 'assets/g8.webp', thumb: 'assets/g8-sm.webp', w: 560, h: 613, alt: 'Irene and Shams on the beach at sunset' }
+    { src: 'assets/g8.webp', thumb: 'assets/g8-sm.webp', w: 560, h: 613, alt: 'Irene and Shams on the beach at sunset' },
+    { src: 'assets/g9.webp', thumb: 'assets/g9-sm.webp', w: 520, h: 766, alt: 'Shams in his ceremonial dress uniform' }
   ],
   footerPhoto: 6,   // index into gallery
 
